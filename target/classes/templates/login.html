@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/login" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="username" required="required">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required="required">
+        <button type="submit">Login</button>
+    </form>
+    <a href="/oauth2/authorization/google">Login with Google</a>
+</body>
+</html>
